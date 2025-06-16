@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Hero from './components/Hero';
-import SeasonBox from './components/SeasonBox';
 import BoxList from './components/BoxList';
 import Navigation from './components/Navigation';
 import './styles/global.css';
