@@ -5,36 +5,9 @@ import Navigation from './components/Navigation';
 import './styles/global.css';
 
 export default function App() {
-  const [theme, setTheme] = useState({});
   const [activeTab, setActiveTab] = useState('home');
   const boxesRef = useRef(null);
   const homeRef = useRef(null);
-
-  // Telegram theme sync
-  useTelegramTheme(setTheme);
-  useEffect(() => {
-    if (!tg) return;
-    document.body.style.background = theme.bg_color || '#000';
-    // mainButton для оформления заказа
-    tg.MainButton.setParams({
-      text: 'Оформить заказ',
-      color: theme.button_color || '#2AABEE',
-      text_color: theme.button_text_color || '#fff',
-      is_visible: activeTab === 'cart',
-    });
-    if (activeTab === 'cart') {
-      tg.MainButton.show();
-    } else {
-      tg.MainButton.hide();
-    }
-    // mainButton click
-    const onMainButtonClicked = () => {
-      // Здесь логика оформления заказа
-      tg.showAlert('Заказ оформлен!');
-    };
-    tg.onEvent('mainButtonClicked', onMainButtonClicked);
-    return () => tg.offEvent('mainButtonClicked', onMainButtonClicked);
-  }, [theme, activeTab]);
 
   // Навигация по кнопкам
   const handleNav = (tab) => {
@@ -45,7 +18,7 @@ export default function App() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: theme.bg_color || 'var(--color-bg)' }}>
+    <div style={{ minHeight: '100vh', background: 'var(--color-bg)' }}>
       <div ref={homeRef} />
       <Hero onChooseBox={() => handleNav('boxes')} />
       <div ref={boxesRef} style={{ marginTop: 430 }}>
