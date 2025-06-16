@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import BoxList from './components/BoxList';
 import Navigation from './components/Navigation';
 import './styles/global.css';
-import { tg, useTelegramTheme } from './telegram';
 
 export default function App() {
   const [theme, setTheme] = useState({});
