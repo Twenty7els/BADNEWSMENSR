@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 .box-card {
-  background: #fff;
+  background: #444;
   border-radius: 20px;
   box-shadow: 0 4px 32px #b8b7ff33;
   overflow: hidden;
@@ -16,11 +16,24 @@
   align-items: center;
   transition: box-shadow 0.2s, filter 0.2s;
   cursor: pointer;
-  border: 6px solid #b8b7ff;
+  border: 2px solid #d3d3d3;
   max-width: 500px;
   margin: 0 auto;
   padding: 18px 14px;
   gap: 10px;
+  color: #fff;
+}
+.box-card * {
+  color: #fff !important;
+}
+.box-card-info h3 {
+  color: #fff !important;
+}
+.box-card-short {
+  color: #fff !important;
+}
+.box-card-price {
+  color: #fff !important;
 }
 .box-card:hover, .box-card:active {
   filter: brightness(1.08);
@@ -72,10 +85,12 @@
   color: #fff;
   border-radius: 14px;
   font-weight: 600;
-  padding: 8px 18px;
+  padding: 7px 12px;
   font-size: 0.98rem;
   box-shadow: 0 2px 8px #0002;
   transition: box-shadow 0.2s, background 0.2s;
+  white-space: nowrap;
+  min-width: 90px;
 }
 .box-card-btn:hover {
   background: #2d437c;
