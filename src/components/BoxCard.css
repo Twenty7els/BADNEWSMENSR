@@ -1,0 +1,121 @@
+.box-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0 12px 80px 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.box-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 32px #b8b7ff33;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: box-shadow 0.2s, filter 0.2s;
+  cursor: pointer;
+  border: 6px solid #b8b7ff;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 18px 14px;
+  gap: 10px;
+}
+.box-card:hover, .box-card:active {
+  filter: brightness(1.08);
+  box-shadow: 0 0 16px 2px #ccc2;
+}
+.box-card-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px #0002;
+  background: #f9f9fa;
+}
+.box-card-info {
+  flex: 1;
+  padding: 0 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+.box-card-info h3 {
+  margin: 0 0 8px 0;
+  color: #2d437c;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.12;
+}
+.box-card-short {
+  color: #232323;
+  font-size: 0.96rem;
+  margin-bottom: 10px;
+  flex: 0;
+  font-weight: 400;
+}
+.box-card-bottom {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+.box-card-price {
+  color: #232323;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-right: 14px;
+}
+.box-card-btn {
+  background: #232323;
+  color: #fff;
+  border-radius: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  font-size: 0.98rem;
+  box-shadow: 0 2px 8px #0002;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.box-card-btn:hover {
+  background: #2d437c;
+  box-shadow: 0 4px 16px #0002;
+}
+.box-card-btn:hover, .box-card-btn:active {
+  filter: brightness(1.2);
+  box-shadow: 0 0 8px 2px #ccc2;
+}
+@media (max-width: 600px) {
+  .box-card {
+    max-width: 98vw;
+    padding: 10px 4px;
+    gap: 8px;
+  }
+  .box-card-img {
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+    min-height: 110px;
+    border-radius: 10px;
+  }
+  .box-card-info {
+    padding: 0 0 0 10px;
+    gap: 10px;
+  }
+  .box-card-info h3 {
+    font-size: 1.05rem;
+  }
+  .box-card-short {
+    font-size: 0.82rem;
+  }
+  .box-card-price {
+    font-size: 0.92rem;
+  }
+  .box-card-btn {
+    font-size: 0.9rem;
+    padding: 7px 13px;
+  }
+  .box-list {
+    padding-bottom: 90px;
+  }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-bg: #000;
+  --color-main: #ccc;
+  --color-dark: #444;
+  --radius: 14px;
+  --shadow: 0 4px 24px 0 rgba(0,0,0,0.4);
+  --font-main: 'Inter', 'Montserrat', 'SF Pro', Arial, sans-serif;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-main);
+  font-family: var(--font-main);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  border-radius: var(--radius);
+  background: var(--color-dark);
+  color: var(--color-main);
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-family: var(--font-main);
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s, filter 0.2s, background 0.2s;
+  cursor: pointer;
+}
+button:hover, button:active {
+  filter: brightness(1.2);
+  box-shadow: 0 0 12px 2px #ccc3;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
