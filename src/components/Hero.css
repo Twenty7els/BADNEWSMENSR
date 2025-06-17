@@ -130,14 +130,23 @@
 
 @media (max-width: 600px) {
   .hero-btn-group {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
-    gap: 0;
+    gap: 12px;
     margin: 0;
     width: 100%;
     background: #222;
-    padding: 0;
+    padding: 12px 0;
+  }
+  .hero-btn {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+  }
+  .hero-btn:last-child {
+    margin-bottom: 0;
   }
 }
 
