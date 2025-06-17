@@ -159,17 +159,31 @@
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    margin-top: 16px;
+    margin-top: 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
     justify-content: center;
     flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding: 0;
   }
   .hero-btn, .hero-btn-secondary {
-    width: auto;
+    flex: 1 1 50%;
+    width: 100%;
     min-width: 0;
     max-width: 100%;
     font-size: 1rem;
-    padding: 10px 10px;
-    flex: 1 1 0;
+    padding: 18px 0;
+    border-radius: 0;
+  }
+  .hero-btn:first-child {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+  .hero-btn:last-child, .hero-btn-secondary:last-child {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
   }
 }
 
