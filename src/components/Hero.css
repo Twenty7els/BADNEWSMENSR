@@ -148,15 +148,15 @@
     min-width: 0;
     width: 100%;
     max-width: 100%;
-    font-size: 0.97rem;
+    font-size: 0.92rem;
     border-radius: 0;
     margin: 0;
-    padding: 13px 0;
-    height: 48px;
+    padding: 10px 2px;
+    height: 52px;
     box-sizing: border-box;
     border: none;
     display: block;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
   }
