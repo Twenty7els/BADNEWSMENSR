@@ -121,61 +121,44 @@
 
 .hero-btn-group {
   display: flex;
-  gap: 16px;
-  margin-top: 18px;
+  flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hero-btn {
-  background: #444;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  padding: 12px 32px;
-  font-size: 1.1rem;
-  font-family: inherit;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
-  box-shadow: 0 2px 16px #0002;
-  margin: 0;
-}
-.hero-btn:hover, .hero-btn:focus {
-  background: #222;
-  color: #fff;
-  box-shadow: 0 4px 24px #0004;
-}
-
-.hero-btn-secondary {
-  background: #222;
-  color: #bbb;
-  border: 1.5px solid #555;
-  box-shadow: none;
+  gap: 14px;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
   .hero-btn-group {
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    margin-top: 0;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    width: 100vw;
     justify-content: center;
-    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 10px;
+    margin: 16px 0 0 0;
+    padding: 0 8px;
+    width: 100%;
     box-sizing: border-box;
-    padding: 0;
+    position: static;
+    background: none;
+    z-index: auto;
   }
   .hero-btn, .hero-btn-secondary {
-    flex: 1 1 50%;
-    width: 100%;
+    flex: 1 1 0;
     min-width: 0;
+    width: 100%;
     max-width: 100%;
-    font-size: 1rem;
-    padding: 18px 0;
+    font-size: 0.97rem;
     border-radius: 0;
+    margin: 0;
+    padding: 13px 0;
+    height: 48px;
+    box-sizing: border-box;
+    border: none;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .hero-btn:first-child {
     border-top-left-radius: 14px;
@@ -187,16 +170,28 @@
   }
 }
 
+.hero-btn {
+  font-weight: 600;
+  background: #444;
+  color: #ccc;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px #000a;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  transition: filter 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+  min-width: 120px;
+  max-width: 100%;
+  width: auto;
+}
 
-
-
-
-
-
-
-
-
-
+.hero-btn-secondary {
+  background: #222;
+  color: #bbb;
+  border: 1.5px solid #555;
+  box-shadow: none;
+}
 
 .hero-btn:hover, .hero-btn:active {
   filter: brightness(1.2);
