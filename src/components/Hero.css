@@ -135,7 +135,9 @@
 @media (max-width: 600px) {
   .hero-btn-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
     gap: 12px;
     margin: 20px 0 0 0;
     padding: 0 4vw;
@@ -163,9 +165,11 @@
     text-overflow: ellipsis;
     touch-action: manipulation;
     -webkit-tap-highlight-color: rgba(0,0,0,0.06);
+    height: 54px;
   }
   .hero-btn:not(:last-child) {
-    margin-bottom: 12px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
   .hero-btn, .hero-btn-secondary {
     border-radius: 16px;
