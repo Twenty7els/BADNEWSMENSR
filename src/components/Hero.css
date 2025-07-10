@@ -18,7 +18,8 @@
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
-  background: #000;
+  background: #f9f9f9;
+  color: #333;
 }
 .hero-image {
   width: 300px;
@@ -37,6 +38,7 @@
   max-width: 700px;
   margin: 0 auto;
   background: none;
+  color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +50,7 @@
 .hero-overlay {
   width: 100vw;
   min-height: 320px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.95) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0.95) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +63,7 @@
 }
 
 .hero-overlay h1 {
-  color: #ccc;
+  color: #333;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -79,11 +81,11 @@
   font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 1.7rem;
-  color: #f5f5f5;
+  color: #333;
   letter-spacing: 0.18em;
   margin-bottom: 7px;
   text-align: center;
-  text-shadow: 0 2px 12px #000a;
+  text-shadow: none;
   font-style: normal;
   line-height: 1.1;
   opacity: 0.92;
@@ -93,7 +95,7 @@
 
 
 .hero-slogan {
-  color: #e7e7e7;
+  color: #333;
   font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 0.98rem;
@@ -109,7 +111,7 @@
 }
 
 .hero-overlay p {
-  color: #ccc;
+  color: #333;
   font-size: 1.1rem;
   margin-bottom: 18px;
   margin-top: 2px;
@@ -183,10 +185,10 @@
 
 .hero-btn {
   font-weight: 600;
-  background: #444;
-  color: #ccc;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px #000a;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 14px 28px;
   font-size: 1.12rem;
   transition: filter 0.2s, box-shadow 0.2s;
@@ -201,9 +203,9 @@
 }
 
 .hero-btn-secondary {
-  background: #222;
-  color: #bbb;
-  border: 1.5px solid #555;
+  background: #eee;
+  color: #333;
+  border: 1px solid #bbb;
   box-shadow: none;
 }
 
